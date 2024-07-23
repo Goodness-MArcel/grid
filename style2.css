@@ -1,0 +1,15 @@
+/* .container{
+    border: thin solid red;
+    display: flex;
+    height: auto;
+
+} */
+/* .container >*{
+    background-color: red;
+    height: 300px;
+
+} */
+.container .item1{
+    height: 100px;
+    background-color: red;
+}

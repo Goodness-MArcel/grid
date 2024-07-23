@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin:50px auto;
+    width: min(95%,70rem);
+    min-width: 30%;
+}
+.head{
+    display: flex;
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+
+}
+.sub-head{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sub-head h4{
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+}
+.sub-head p{
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+}
+.user-name h3 {
+   margin-bottom: 0;
+   text-transform: capitalize;
+   font-family: "Poppins", sans-serif;
+}
+.user-name p{
+    margin-top: 0;
+    font-family: "Poppins", sans-serif;
+}
+.img-box{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.img-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.container >*{
+    border-radius: 10px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.item1{
+    background-color: rgb(154, 69, 233);
+    padding-block: 1.1rem;
+    grid-column: span 2;
+}
+.item2{
+    background-color: rgb(74, 70, 67);
+    padding-block: 1.1rem;
+    color: white;
+}
+.item3{
+    background-color: white;
+    grid-row: span 2;
+    padding-block: 1.1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.item4{
+    background-color: white;
+    padding-block: 1.1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.item5{
+    background-color:rgb(68, 68, 77);
+    padding-block: 1.1rem;
+    grid-column: span 2;
+}
+
+@media  (max-width: 600px) {
+    .item1{
+        grid-column: span 4;
+    }
+    .item2{
+        grid-column: span 4;
+    }
+    .item3{
+        grid-column: span 4;
+    }
+    .item4{
+        grid-column: span 4;
+    }
+    .item5{
+        grid-column: span 4;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 991px){
+    .item1{
+        grid-column: span 2;
+    }
+    .item2{
+        grid-column: span 2;
+    }
+    .item3{
+        grid-column: span 4;
+    }
+    .item4{
+        grid-column: span 2;
+    }
+    .item5{
+        grid-column: span 2;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .item1{
+        grid-column: span 2;
+    }
+    .item3{
+        grid-row: span 2;
+    }
+    .item5{
+        grid-column: span 2;
+    }
+}
+
+
