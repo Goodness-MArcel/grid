@@ -55,6 +55,7 @@
 }
 .container >*{
     border-radius: 10px;
+    flex: 0 0 auto;
 }
 .item{
     display: flex;
@@ -76,6 +77,8 @@
     grid-row: span 2;
     padding-block: 1.1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-width: 500px;
+    max-height: fit-content;
 }
 .item4{
     background-color: white;
@@ -134,5 +137,5 @@
         grid-column: span 2;
     }
 }
-
+/* section */
 
